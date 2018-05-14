@@ -27,7 +27,7 @@ void search(point x)
 }
 int main()
 {
-	while(scanf("%d",&n)!=EOF)
+	while(scanf("%d",&n)!=EOF&&n)
 	{
 		memset(ans,0,sizeof(ans));
 		int x1,x2,y1,y2,t1,t2;
