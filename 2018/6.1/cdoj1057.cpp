@@ -75,9 +75,9 @@ long long  query(int x,int l,int r)
         push_down(x);
         int mid = (L+R)/2;
         long long ans = 0;
-        if(mid>=r)
+        if(mid>=l)
             ans+=query(x<<1,l,r);
-        if(mid<l)
+        if(mid<r)
             ans += query(x<<1|1,l,r);
         push_up(x);
         return ans;
